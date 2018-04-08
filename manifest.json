@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "aobloomer",
+  "version": "1.0",
+  "description": "Aoyama Blue Mountain",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "icons" : {
+    "128": "icon.png"
+  }
+}
