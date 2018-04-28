@@ -2,7 +2,7 @@
 function onClickHandler(info, tab) {
   switch (info.menuItemId) {
     case "copy-page-with-md":
-      copyToClipboard("[" + tab.title + "]" + "(" + JSON.stringify(tab.url) + ")");
+      copyToClipboard("[" + tab.title + "]" + "(" + tab.url + ")");
       break;
     case "copy-image-with-md":
       copyToClipboard("[![]" + "(" + info.srcUrl + ")](" + info.srcUrl + ")");
