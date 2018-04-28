@@ -1,15 +1,21 @@
 {
-  "manifest_version": 2,
-  "name": "aobloomer",
+  "name": "Benri",
+  "description": "My Chrome Exntension",
   "version": "1.0",
-  "description": "Aoyama Blue Mountain",
-  "browser_action": {
-    "default_icon": "icon.png"
+  "icons": {
+    "128": "icon.png"
   },
   "permissions": [
-    "tabs"
+    "tabs",
+    "contextMenus",
+    "clipboardWrite"
   ],
-  "icons" : {
-    "128": "icon.png"
-  }
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "libs.js",
+      "background.js"
+    ]
+  },
+  "manifest_version": 2
 }
